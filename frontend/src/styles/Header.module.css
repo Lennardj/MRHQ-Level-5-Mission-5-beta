@@ -1,0 +1,180 @@
+.headerContainer {
+  background-color: #f5f5f5;
+}
+.colourStrip {
+  width: 100%;
+  height: 35px;
+  border-style: solid;
+  border-color: #000;
+  background-color: #000;
+  margin-bottom: 1.5rem;
+}
+.logoSearchBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.logoImgContainer,
+.closeMenu,
+.hamburgerMenu {
+  margin-left: 2.5rem;
+}
+.closeMenu,
+.hamburgerMenu {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.logoImgOne {
+  width: 6.5rem;
+}
+.logoImgTwo {
+  width: 12.5rem;
+}
+.headerBtnContainer,
+.carticon {
+  margin-right: 2.5rem;
+}
+.carticon {
+  cursor: pointer;
+}
+.headerSearchBox {
+  width: 36.5rem;
+  height: 2.5rem;
+  background: #ffffff;
+  /* border: 1px solid #000000; */
+}
+.btns {
+  background-color: #d9d9d9;
+  color: #000;
+  transition: filter 300ms;
+}
+.btns:hover {
+  filter: brightness(1.2);
+}
+.btn1 {
+  border: none;
+}
+
+.btn2 {
+  margin-left: 2rem;
+  border: 0.0625rem solid #000000;
+}
+/* Search bar with clickable seach icon buttton */
+form {
+  color: #555;
+  display: flex;
+  padding: 2px;
+  border: 1px solid currentColor;
+  border-radius: 5px;
+}
+input[type="search"] {
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 7px 8px;
+  font-size: 14px;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: inherit;
+}
+
+input[type="search"]::placeholder {
+  color: #bbb;
+}
+button[type="submit"] {
+  text-indent: -999px;
+  overflow: hidden;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat center;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+button[type="submit"]:hover {
+  opacity: 1;
+}
+button[type="submit"]:focus,
+input[type="search"]:focus {
+  box-shadow: 0 0 3px 0 #1183d6;
+  border-color: #1183d6;
+  outline: none;
+}
+/* Header input box */
+
+.headerNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.navbar li {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  padding-right: 1.5rem;
+}
+.carticon {
+  width: 36px;
+  height: 32px;
+}
+.navbar li:hover {
+  cursor: pointer;
+  color: #d9d9d9;
+  font-weight: 800;
+}
+.navitems {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.dropdown {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.dropdowncontent {
+  margin-left: 2.5rem;
+  display: none;
+  position: absolute;
+  background-color: var(--bg);
+  font-weight: 400;
+  font-size: 24px;
+  width: 350px;
+}
+.dropdownactive {
+  display: block;
+}
+.navitems {
+  height: 59px;
+  border: none;
+  transition: fi;
+}
+
+.navitems:hover {
+  background-color: re;
+}
+.navitems p {
+  /* padding: ; */
+  margin: 0;
+  padding-right: 20px;
+}
+.navitems img {
+  margin-right: 10px;
+  width: 50px;
+  aspect-ratio: 3/2;
+  padding: 0 10px;
+  object-fit: contain;
+}
