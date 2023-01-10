@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Search(props) {
   return (
     <div className={style.logoSearchBar}>
-      <Link>
+      <Link to="/">
         <div className={style.logoImgContainer}>
           <img
             className={style.logoImgOne}

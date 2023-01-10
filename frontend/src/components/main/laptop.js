@@ -1,12 +1,32 @@
-import React from "react";
+import axios from "axios";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import style from "../../styles/Main.module.css";
 
 const Laptop = () => {
+  const [laptop, setLaptop] = useState([]);
+  useEffect(() => {
+    axios
+      .get("http://localhost:5000/api/laptops/")
+      .then(function (response) {
+        // handle success
+        setLaptop(response.data);
+        console.log(response.data);
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      });
+  }, []);
   return (
     <div className={style.laptopinfo}>
-      <h3 className={style.laptopinfoname}>Laptop Name</h3>
-      <img src="http://placehold.it/" alt="placeholder" />
+      {laptop.map((item, index) => (
+        <>
+          <h3 className={style.laptopinfoname}>{laptop.name}</h3>
+          <img src="/images/laptopimagee.png" alt="placeholder" />
+        </>
+      ))}
+
       <div>
         <p>
           <span>Laptop Specs</span>

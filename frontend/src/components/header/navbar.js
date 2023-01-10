@@ -40,8 +40,9 @@ export default function Navbar() {
             }
           >
             {Navbararr.map((item, index) => (
-              <Link to="#">
-                <div className={`${style.navitems}`}>
+              // add url to link to pages
+              <Link to={item.url ? item.url : "#"}>
+                <div key={index} className={`${style.navitems}`}>
                   <div>
                     <img src={item.icon} alt="placeholder" />
                   </div>

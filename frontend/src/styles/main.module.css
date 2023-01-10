@@ -1,7 +1,9 @@
 .Tracker {
   display: flex;
   justify-content: space-between;
-  margin-left: 2.5rem;
+  padding-left: 2.5rem;
+  margin: 1px;
+  border: solid 2px black;
 }
 .Tracker ul {
   display: flex;
@@ -24,7 +26,6 @@
   align-items: center;
   gap: 15px;
 }
-
 .sort input {
   padding: 5px 0;
   width: 100px;
@@ -33,4 +34,38 @@
 .banner img {
   width: 100%;
   margin-bottom: 25%;
+}
+.filterForm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.left {
+  text-align: center;
+}
+.filterItem h3 {
+  font-size: 23px;
+  font-weight: 400;
+}
+.line {
+  background-color: red;
+  /* width: 100px; */
+  height: 500px;
+  margin-right: 50px;
+}
+.filterbtnContainer {
+  margin: 0 25px;
+}
+.filterButton {
+  padding: 10px 15px;
+  background-color: #d9d9d9;
+  border: none;
+}
+.filterButton1 {
+  padding: 10px 16px;
+}
+.filterButton2 {
+  border: #000 solid 0.5px;
+  margin-left: 10px;
+  background-color: #fff;
 }
