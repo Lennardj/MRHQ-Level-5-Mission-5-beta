@@ -9,6 +9,7 @@ mongoose
   })
   .catch((e) => {
     console.error("Connection error", e.message);
+    process.exit(1);
   });
 
 const db = mongoose.connection;

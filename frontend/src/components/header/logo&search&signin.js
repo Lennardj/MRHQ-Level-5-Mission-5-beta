@@ -1,27 +1,32 @@
 import style from "../../styles/Header.module.css";
+import { Link } from "react-router-dom";
 
 export default function Search(props) {
   return (
     <div className={style.logoSearchBar}>
-      <div className={style.logoImgContainer}>
-        <img
-          className={style.logoImgOne}
-          src={props.pb}
-          alt="PB of the PB tech logo"
-        />
-        <img
-          className={style.logoImgTwo}
-          src={props.tech}
-          alt="Tech of the PB tech logo"
-        />
-      </div>
+      <Link>
+        <div className={style.logoImgContainer}>
+          <img
+            className={style.logoImgOne}
+            src={props.pb}
+            alt="PB of the PB tech logo"
+          />
+          <img
+            className={style.logoImgTwo}
+            src={props.tech}
+            alt="Tech of the PB tech logo"
+          />
+        </div>
+      </Link>
       <form className={style.form}>
         <input
           className={style.headerSearchBox}
           type="search"
           placeholder="Enter the name of the laptop"
         />
-        <button type="submit">Search</button>
+        <button type="submit" onClick={(e) => e.preventDefault()}>
+          Search
+        </button>
       </form>
       <div className={style.headerBtnContainer}>
         {/* Create a sign in and create account modal */}

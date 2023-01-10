@@ -1,4 +1,4 @@
-# Version shuld be higher but my computer is old
+# Version should be higher but my computer is old
 version: "2.13"
 # a service is just refering to a container
 services:
@@ -7,6 +7,7 @@ services:
     container_name: react_container
     # This build means to take the docker file from the frontend folder
     build: ./frontend/
+    # refers to the standard input stream
     stdin_open: true
     ports:
       - 3000:3000
@@ -38,8 +39,6 @@ services:
     environment:
       PORT: 5000
       MONGODB_URL: "mongodb://mongo_db:27017/mission5"
-      # DB_NAME: labtops
-      # NAME: LennardJohn
     depends_on:
       - mongo_db
 networks:

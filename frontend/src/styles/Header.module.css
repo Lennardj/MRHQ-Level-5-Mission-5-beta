@@ -24,6 +24,13 @@
 .hamburgerMenu {
   margin-right: 0.5rem;
   cursor: pointer;
+  /* transition: filter 300ms; */
+}
+.closeMenu:hover,
+.hamburgerMenu:hover {
+  /* color: #fff; */
+  filter: brightness(1.2);
+  /* background-color: #000; */
 }
 
 .logoImgOne {
@@ -36,8 +43,33 @@
 .carticon {
   margin-right: 2.5rem;
 }
+.cartContainer {
+  display: flex;
+  margin-right: 20px;
+  align-items: center;
+  background: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.cartContainer:hover {
+  background-color: rgb(12, 105, 131);
+}
 .carticon {
   cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+.iconbadge {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #1183d6;
 }
 .headerSearchBox {
   width: 36.5rem;
@@ -160,11 +192,11 @@ input[type="search"]:focus {
 .navitems {
   height: 59px;
   border: none;
-  transition: fi;
+  transition: filter;
 }
 
 .navitems:hover {
-  background-color: re;
+  background-color: rgba(0, 213, 255, 0.329);
 }
 .navitems p {
   /* padding: ; */
@@ -177,4 +209,25 @@ input[type="search"]:focus {
   aspect-ratio: 3/2;
   padding: 0 10px;
   object-fit: contain;
+}
+@media (max-width: 1530px) {
+  form {
+    display: none;
+  }
+
+  .hamburger__menu {
+    display: flex;
+  }
+}
+
+@media (max-width: 1077px) {
+  .navbar li {
+    display: none;
+  }
+}
+
+@media (max-width: 827px) {
+  .dropdown {
+    width: 100vh;
+  }
 }

@@ -43,7 +43,7 @@ export default function Navbar() {
               <Link to="#">
                 <div className={`${style.navitems}`}>
                   <div>
-                    <img src={item.icon} />
+                    <img src={item.icon} alt="placeholder" />
                   </div>
                   <p>{item.name}</p>
                 </div>
@@ -57,8 +57,12 @@ export default function Navbar() {
         <li>Hot Deals</li>
         <li>New Arrivals</li>
       </div>
-
-      <HiShoppingCart className={style.carticon} />
+      <Link to="/cart">
+        <div className={style.cartContainer}>
+          <HiShoppingCart className={style.carticon} />
+          <span className={style.iconbadge}>0</span>
+        </div>
+      </Link>
     </div>
   );
 }

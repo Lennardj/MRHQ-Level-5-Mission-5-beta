@@ -21,7 +21,7 @@ RUN npm  ci
 COPY . .
 
 # Makes sure port 8080 is available to the outside world (outside the container)
-EXPOSE 3000
+EXPOSE 5000
 
 # Start application inside contatiner 
 

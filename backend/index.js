@@ -9,20 +9,20 @@ require("dotenv").config();
 const port = process.env.PORT;
 // laptop router
 const laptopRouter = require("./routes/laptop-routes");
-// movie router
-const movieRouter = require("./routes/movie-router");
-
+//
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 app.use(bodyParser.json());
-
+// binds to the mongoose server so the output is only one
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
+// Above should be replaced with below if you don't understand
+// db.on("open", function () {
+//   console.log("MongoDB connected!");
+// });
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
-app.use("/api", laptopRouter);
-// movie router
-app.use("/api", movieRouter);
+app.use("/api/laptops", laptopRouter);
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
