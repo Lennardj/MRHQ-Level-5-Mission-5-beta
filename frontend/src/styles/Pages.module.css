@@ -1,9 +1,8 @@
 .mainSection {
   display: flex;
-  width: 100%;
+  align-items: flex-start;
 }
 .slideshow {
   display: flex;
   flex-direction: row;
-  justify-content: center;
 }

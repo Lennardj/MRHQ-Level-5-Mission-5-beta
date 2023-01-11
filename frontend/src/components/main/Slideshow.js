@@ -32,17 +32,13 @@ function Slideshow() {
 
   return (
     <div className={style.slideshowContainer}>
+      <h3>PRODUCTS RECOMMENDED FOR YOU</h3>
       <div className={style.slideshow}>
         <div
           className={style.slideshowSlider}
           style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
         >
           {images.map((imageurl, index) => (
-            // <div
-            //
-            //   key={index}
-            // //   style={{ backgroundColor }}
-            // />
             <img className={style.slide} src={imageurl} alt="laptop image" />
           ))}
         </div>

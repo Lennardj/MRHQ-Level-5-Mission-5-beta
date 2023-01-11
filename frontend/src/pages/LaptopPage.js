@@ -33,9 +33,6 @@ const LaptopPage = () => {
       </div>
       <div className={style.slideshow}>
         <Slideshow />
-        <Slideshow />
-        <Slideshow />
-        <Slideshow />
       </div>
       <Footer />
     </div>

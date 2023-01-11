@@ -37,15 +37,17 @@ function FilterForm() {
         </div>
         <div className={style.filterbtnContainer}>
           <p>Show more filters</p>
-          <button className={`${style.filterButton1} ${style.filterButton}`}>
-            Clear Filter
-          </button>
-          <button
-            type="button"
-            className={`${style.filterButton2} ${style.filterButton}`}
-          >
-            Apply Filter
-          </button>
+          <div className={style.filterbtn}>
+            <button className={`${style.filterButton1} ${style.filterButton}`}>
+              Clear Filter
+            </button>
+            <button
+              type="button"
+              className={`${style.filterButton2} ${style.filterButton}`}
+            >
+              Apply Filter
+            </button>
+          </div>
         </div>
       </div>
       <div className={style.right}>
