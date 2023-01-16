@@ -9,6 +9,9 @@
   display: flex;
 }
 .Tracker ul li {
+  padding-right: 10px;
+}
+.Tracker ul li {
   margin-left: 10px;
   cursor: pointer;
 }
@@ -16,6 +19,7 @@
   margin-left: 0;
   color: #000;
 }
+
 .Tracker div img {
   margin-left: 10px;
 }
@@ -147,7 +151,7 @@
   background-color: #c4c4c4;
 }
 .slideshowDot.active {
-  background-color: #6a0dad;
+  background-color: #fff;
 }
 .slideshowContainer {
   background-color: rgba(217, 217, 217, 0.58);
