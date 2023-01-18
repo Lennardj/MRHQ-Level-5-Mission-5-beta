@@ -76,3 +76,5 @@ Project Link: [https://github.com/Lennardj/MRHQ-Level-5-Mission-5-beta](https://
 [node-url]: https://nodejs.org/en/
 [express.js]: https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white
 [express-url]: https://expressjs.com/
+[mongodb.com]: https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white
+[mongodb-url]: https://www.mongodb.com/
