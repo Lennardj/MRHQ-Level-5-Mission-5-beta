@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/lennardj/MRHQ-Level-5-Mission-5">
-    <img src="https://www.unitec.ac.nz/sites/default/files/public/_resampled/Mission%20Ready%20Clear%20Space%20Horizontal_0.png-821x405.png" alt="Logo" width="150" height="150">
+    <img src="https://www.unitec.ac.nz/sites/default/files/public/_resampled/Mission%20Ready%20Clear%20Space%20Horizontal_0.png-821x405.png" alt="Logo" >
   </a>
 
 <h3 align="center">Mission 5</h3>
