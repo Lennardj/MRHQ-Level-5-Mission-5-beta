@@ -48,6 +48,7 @@
 }
 .left {
   text-align: center;
+  width: 300px;
 }
 .filterItem h3 {
   font-size: 23px;
@@ -64,6 +65,8 @@
 }
 .filterbtn {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .filterButton {
   padding: 10px 15px;

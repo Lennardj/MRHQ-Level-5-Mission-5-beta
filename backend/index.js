@@ -13,6 +13,7 @@ const laptopRouter = require("./routes/laptop-routes");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 app.use(bodyParser.json());
+
 // binds to the mongoose server so the output is only one
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 // Above should be replaced with below if you don't understand
