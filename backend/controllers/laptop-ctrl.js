@@ -3,6 +3,11 @@ const Laptop = require("../models/laptop-model");
 const getLaptops = async (req, res) => {
   try {
     const laptops = await Laptop.find({});
+    if (!laptops) {
+      res
+        .status(404)
+        .json({ message: "There is no laptop available in this database." });
+    }
     res.json(laptops);
   } catch (error) {
     console.error(error);
@@ -13,8 +18,11 @@ const getLaptops = async (req, res) => {
 const getLaptopById = async (req, res) => {
   try {
     const laptop = await Laptop.findById(req.params.id);
-
-    res.json(laptop);
+    if (!laptop) {
+      res.status(404).send({ message: "laptop not found" });
+    } else {
+      res.json(laptop);
+    }
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: "Server Error" });
@@ -52,9 +60,9 @@ const createLaptop = (req, res) => {
       });
     });
 };
+
 const updateLaptop = async (req, res) => {
   const body = req.body;
-
   if (!body) {
     return res.status(400).json({
       success: false,
@@ -77,12 +85,13 @@ const updateLaptop = async (req, res) => {
     laptop.imageUrl = body.imageUrl;
     laptop.countInStock = body.countInStock;
     laptop.price = body.price;
-    movie
+
+    laptop
       .save()
       .then(() => {
         return res.status(200).json({
           success: true,
-          id: movie._id,
+          id: laptop._id,
           message: "Laptop updated!",
         });
       })

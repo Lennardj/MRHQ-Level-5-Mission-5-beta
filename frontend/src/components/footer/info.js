@@ -7,8 +7,8 @@ export default function Info() {
         <img src={logo} />
         <h3>DEPARTMETS</h3>
         <ul>
-          <li>Test update </li>
-          <li>Test update 2 </li>
+          <li>Lorem Ipsum </li>
+          <li>Lorem Ipsum </li>
           <li>Lorem Ipsum </li>
           <li>Lorem Ipsum </li>
           <li>Lorem Ipsum </li>
