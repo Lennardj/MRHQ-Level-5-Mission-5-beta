@@ -38,7 +38,7 @@ Follow the instruction below to get started
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/Lennardj/MRHQ-Level-5-Mission-5-beta
    ```
 2. Install Frontend NPM packages
    ```sh
@@ -66,9 +66,13 @@ Follow the instruction below to get started
 
 Your Name - lennardvincentjohn@gmail.com
 
-Project Link: [https://github.com/lennardj/MRHQ-Level-5-Mission-5](https://github.com/lennardj/MRHQ-Level-5-Mission-5)
+Project Link: [https://github.com/Lennardj/MRHQ-Level-5-Mission-5-beta](https://github.com/Lennardj/MRHQ-Level-5-Mission-5-beta)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 [react.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [react-url]: https://reactjs.org/
+[node.js]: https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white
+[node-url]: https://nodejs.org/en/
+[express.js]: https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white
+[express-url]: https://expressjs.com/
